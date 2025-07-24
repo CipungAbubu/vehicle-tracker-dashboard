@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+# Vehicle Tracker Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Selamat datang di proyek **Vehicle Tracker Dashboard**!  
+Proyek ini adalah aplikasi frontend yang dibangun menggunakan **React** dan **TypeScript** untuk memantau kendaraan dan data telemetrinya.
 
-Currently, two official plugins are available:
+Dengan aplikasi ini, pengguna dapat melihat daftar kendaraan, statusnya, dan detail lebih lanjut tentang setiap kendaraan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Fitur Utama
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Daftar Kendaraan**  
+  Menampilkan nama kendaraan, status, kecepatan, dan waktu pembaruan.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Detail Kendaraan**  
+  Mengambil dan menampilkan informasi mendetail seperti level bahan bakar, odometer, timestamp, kecepatan, dan lokasi (latitude & longitude).
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Indikator Loading**  
+  Menampilkan *loading spinner* saat data sedang diambil.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Penanganan Kesalahan**  
+  Menyediakan umpan balik yang jelas jika terjadi kesalahan saat mengambil data.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Desain Responsif**  
+  Menggunakan **TailwindCSS** untuk memastikan tampilan yang baik di berbagai ukuran layar.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Teknologi yang Digunakan
+
+- **React** – Untuk membangun antarmuka pengguna
+- **TypeScript** – Untuk menambahkan tipe statis dan meningkatkan kualitas kode
+- **Zustand** – Untuk manajemen state global
+- **TailwindCSS** – Untuk styling yang cepat dan responsif
+- **ShadCN UI Components** – Untuk elemen UI yang modern dan menarik
+
+---
+
+Terima kasih telah melihat proyek ini! 🙌  
+Jangan ragu untuk memberikan ⭐ jika kamu menyukainya.
